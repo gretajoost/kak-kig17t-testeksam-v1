@@ -2,9 +2,9 @@
 
 :root {
     --green: hsl(141, 73%, 42%);
-    --yellow: hsla(61, 0%, 87%, 1);
+    --yellow: #FEFFBB;
     --purple: hsla(266, 0%, 65%, 1);
-    --gray: hsla(129, 0%, 0%, 1);
+    --gray: #555555;
     --gray-dark: hsla(0, 0%, 25%, 1);
     --white: #fff;
 }
@@ -35,9 +35,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 20px;
+    min-height: 50vh;
     width: 100%;
-    padding: 0;
+    padding: 40px;
     background-color: #1DB954;
     font-family: 'Poppins', sans-serif;
 }
@@ -48,8 +48,9 @@ a {
     color: #FEFFBB;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-style: normal;
-    font-size: 64px;
+    font-size: 15vw;
     font-weight: 900;
+    line-height: 85px;
 }
 
 .hero__subheading {
@@ -62,8 +63,10 @@ a {
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -72,9 +75,12 @@ a {
     align-items: center;
     justify-content: top;
     max-width: 600px;
-    padding: 0;
+    padding: 40px;
+    margin: 10px;
     color: var(--green);
     text-decoration: none;
+    /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 8px; */
 }
 .card__icon{
     width: 15vw;
@@ -86,11 +92,14 @@ a {
     font-size: 1.7rem;
     color: var(--green);
     margin: 0.85rem 0;
+    text-align: center;
+    text-decoration: underline;
 }
 .card__description {
     margin: 0;
-    line-height: 350%;
+    line-height: 140%;
     font-size:1.3rem;
+    text-align: center;
     color: var(--gray);
 }
 
@@ -106,7 +115,7 @@ a {
     border-bottom: 1rem solid var(--green);
 }
 .footer__title{
-    font-size: 3rem;
+    font-size: 36px;
     color: var(--yellow);
     display: flex;
 }
@@ -115,7 +124,7 @@ a {
 @media (min-width: 768px) { 
     .hero__heading {
         font-size: 9vw;
-        transform: rotate(-3deg);
+        transform: rotate(-3deg);    
     }
     .hero__subheading {
         font-size: 1.6rem;
@@ -126,15 +135,14 @@ a {
     }
 }
 
-
 @media (min-width: 1024px) { 
     .hero__subheading {
         width: 75vw;
         font-size: 1.6vw;
-        order: 2;
+        text-align: left;
     }
     .hero__subheading:last-child {
-        text-align: center;
+        text-align: right;
     }
     .content {
         flex-direction: row;
@@ -143,15 +151,18 @@ a {
         width: 80%;
         padding: 10vh 0;
         max-width: 1200px;
+        
     }
     .card {
         flex: 0 1 32.3%;
         transition: all 0.5s ease-in-out;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
     }
-    /* .card:hover {
+    .card:hover {
         background: var(--yellow);
         box-shadow: 0 3px 9px 1px hsla(0, 0%, 0%, 0.25);
-    } */
+    } 
     .card__icon{
         width: 8vw;
         height: auto;
@@ -168,214 +179,3 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px) { 
-    .card::after {
-        content: "🙃";
-        font-size: 375%;
-    }
-}
